@@ -1,4 +1,4 @@
-<img width="465" height="328" alt="image" src="https://github.com/user-attachments/assets/0d512d70-6568-4a45-af06-33091a34df3e" />A basic C++ solver to compute the 3D lid driven cavity problem using the SIMPLE algorithm, the solver is benchmarked using the Z=0.5 plane cut and compared with results from an openfoam simulation for Re=100.
+A basic C++ solver to compute the 3D lid driven cavity problem using the SIMPLE algorithm, the solver is benchmarked using the Z=0.5 plane cut and compared with results from an openfoam simulation for Re=100.
 The Eigen unsupported Tensor module is used for the arrays used in this work.the headers can be included by unzipping the given file.The program is run after compilation with the makefile by the command **" ./run  filename.inp"** (setup.inp) by default included in the repo).
 
 
