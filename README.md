@@ -2,6 +2,11 @@ A basic C++ solver to compute the 3D lid driven cavity problem using the SIMPLE 
 The Eigen unsupported Tensor module is used for the arrays used in this work.the headers can be included by unzipping the given file.The program is run after compilation with the makefile by the command **" ./run  filename.inp"** (setup.inp) by default included in the repo).
 
 
+
+<img width="849" height="629" alt="image" src="https://github.com/user-attachments/assets/fa6707c4-faff-463c-a616-ad64eb4a71e4" />
+
+<img width="977" height="671" alt="image" src="https://github.com/user-attachments/assets/b0e0b5e0-0e41-468f-ae53-390584d1052a" />
+
 <img width="509" height="324" alt="image" src="https://github.com/user-attachments/assets/3936a3a1-b98a-48ae-af27-a25644421ffa" />
 
 
