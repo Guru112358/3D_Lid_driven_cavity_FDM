@@ -1,0 +1,1 @@
+A simple C++ solver to solve the 3D lid driven cavity problem using the simple algorithm, the solver is benchmarked using the Z=0.5 plane cut and compared with results from an openfoam simulation for Re=100.
