@@ -1,5 +1,5 @@
 CXX := g++
-ACCFLAGS_1 := -O3  -march=native  -I eigen/ -fopt-info-vec -fopenmp
+ACCFLAGS_1 := -O3  -march=native  -I eigen3/ -fopt-info-vec -fopenmp
 
 
 run: main.cpp
