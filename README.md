@@ -10,3 +10,7 @@ The Eigen unsupported Tensor module is used for the arrays used in this work.the
 <img width="641" height="535" alt="image" src="https://github.com/user-attachments/assets/85f1b7be-bbb1-4888-ab78-55d978611c2c" />
 
 <img width="704" height="528" alt="image" src="https://github.com/user-attachments/assets/a5a121b3-6829-475a-b51a-2f7adff50fab" />
+
+
+<img width="640" height="384" alt="image" src="https://github.com/user-attachments/assets/dfced681-0b73-4fb3-8585-0bcfb4a7f4b8" />
+<img width="640" height="384" alt="image" src="https://github.com/user-attachments/assets/8cb72b32-97ae-4beb-8277-53b9a9137fc6" />
