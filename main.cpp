@@ -60,7 +60,7 @@ while(loop_switch)
 	if((residual<sim.tol&&(count!=0)))	
 	{
 	compute_collocated_values(fv.u,fv.v,fv.w,fv.p,uc,vc,wc,pc,dom);
-	write_file(uc,vc,wc,pc,dom.nx,dom.ny,dom.nz,dom.dx,dom.dy,dom.dz);
+	write_file_vtk_ascii(uc,vc,wc,pc,dom.nx,dom.ny,dom.nz,dom.dx,dom.dy,dom.dz);
 	std::cout<<"converged to a tolerance of: "<<sim.tol<<" in "	<<count<<" Iterations"<<"\n";
 	loop_switch=false;
 	
@@ -70,7 +70,7 @@ while(loop_switch)
 	if(count%sim.print_interval==0)
 	{
 	compute_collocated_values(fv.u,fv.v,fv.w,fv.p,uc,vc,wc,pc,dom);
-	write_file(uc,vc,wc,pc,dom.nx,dom.ny,dom.nz,dom.dx,dom.dy,dom.dz);
+	write_file_vtk_ascii(uc,vc,wc,pc,dom.nx,dom.ny,dom.nz,dom.dx,dom.dy,dom.dz);
 	std::cout<<"|| iteration is: "<<count<<", continuity residual : " <<residual<<" ||"<<"\n";
 	
 	}
