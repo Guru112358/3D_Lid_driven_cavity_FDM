@@ -29,6 +29,7 @@ file>>sim.pressure_iters;
 file>>sim.print_interval;
 file>>sim.max_iters;
 file>>sim.urf_p;
+file>>sim.nthreads;
 file.close();
 
 }   
