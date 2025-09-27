@@ -17,12 +17,11 @@ bool loop_switch=true;
 //init with junk values 
 domain dom(0,0,0,0.0,0.0,0.0);
 
-simparam sim(0.0,0,0.0,0.0,0.0,0.0,0.0);
-
+simparam sim(0.0,0,0.0,0.0,0.0,0.0,0.0,0);
 
 read_params(argv[1],sim,dom);
 
-
+omp_set_num_threads(sim.nthreads);
 
 flow_variables fv(dom.nx,dom.ny,dom.nz);
 
