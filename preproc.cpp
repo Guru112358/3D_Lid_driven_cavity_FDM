@@ -4,30 +4,31 @@ void read_params(const std::string &filename,simparam&sim,domain&dom);
 
 
 
-struct simparam
-{
-    double dt;             
-    double Re;            
-    double tol;            
-    int pressure_iters;    
-    int print_interval;    
-    long max_iters; 
-    double urf_p;       
-    int nthreads;
-    simparam(double dt_,
-             double Re_,
-             double tol_,
-             int pressure_iters_,
-             int print_interval_,
-             long max_iters_,
-             double urf_p_,int n_threads)
-        : dt(dt_),
-          Re(Re_),
-          tol(tol_),
-          pressure_iters(pressure_iters_),
-          print_interval(print_interval_),
-          max_iters(max_iters_),
-          urf_p(urf_p_),
-          nthreads(n_threads)
-    {}
-};
+void read_params(const std::string &filename,simparam&sim,domain&dom) {
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "Error: could not open " << filename << "\n";
+        std::exit(1);
+}
+
+file>>dom.lx;
+file>>dom.ly;
+file>>dom.lz;
+file>>dom.nx;
+file>>dom.ny;
+file>>dom.nz;
+
+dom.dx=dom.lx/dom.nx;
+dom.dy=dom.ly/dom.ny;
+dom.dz=dom.lz/dom.nz;
+
+file>>sim.dt;
+file>>sim.Re;
+file>>sim.tol;
+file>>sim.pressure_iters;
+file>>sim.print_interval;
+file>>sim.max_iters;
+file>>sim.urf_p;
+file.close();
+
+}   
