@@ -218,7 +218,7 @@ for(int iter_count=0;iter_count<niter;iter_count++)
 	rhs=0;
 	
 	
-	#pragma omp for collapse(3) schedule(static) private(d,rhs) 
+	#pragma omp parallel for collapse(3) schedule(static) private(d,rhs) 
 	
 
 	for(int i = 1; i <= (dom.nx - 1); i++)
